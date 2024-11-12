@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SigmaTestTask", "SigmaTestTask\SigmaTestTask.csproj", "{874E477C-82DF-4BF1-946C-2CE7AB4FC50E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{874E477C-82DF-4BF1-946C-2CE7AB4FC50E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{874E477C-82DF-4BF1-946C-2CE7AB4FC50E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{874E477C-82DF-4BF1-946C-2CE7AB4FC50E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{874E477C-82DF-4BF1-946C-2CE7AB4FC50E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C22CEDC-CA80-48E9-95F8-64CF0EFB219B}
+	EndGlobalSection
+EndGlobal
