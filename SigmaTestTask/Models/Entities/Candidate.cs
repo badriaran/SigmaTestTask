@@ -5,7 +5,8 @@ namespace SigmaTestTask.Models.Entities
 {
     public class Candidate
     {
-        public Guid Id { get; set; }
+    
+        public int Id { get; set; }
         [Key]
         [Required]
         [EmailAddress]
@@ -26,10 +27,10 @@ namespace SigmaTestTask.Models.Entities
         public string PreferredCallTime { get; set; } // e.g., "9am-11am"
 
         [Url]
-        public string LinkedInProfile { get; set; }
+        public string? LinkedInProfile { get; set; }
 
         [Url]
-        public string GitHubProfile { get; set; }
+        public string? GitHubProfile { get; set; }
 
         [Required]
         [MaxLength(500)]

@@ -53,8 +53,8 @@ namespace SigmaTestTask.Controllers
 
         }
         [HttpPut]
-        [Route("{id:guid}")]
-        public IActionResult UpdateCandidate(Guid id,UpdateCandidateDto updateCandidateDto )
+        [Route("{id:int}")]
+        public IActionResult UpdateCandidate(int id,UpdateCandidateDto updateCandidateDto )
         {
             var candidate = dbContext.Candidates.Find(id);
             if (candidate is null)
@@ -72,8 +72,8 @@ namespace SigmaTestTask.Controllers
             return Ok(candidate);
         }
         [HttpDelete]
-        [Route("{id:guid}")]
-        public IActionResult DeleteCandidate(Guid id)
+        [Route("{id:int}")]
+        public IActionResult DeleteCandidate(int id)
         {
             var candidate = dbContext.Candidates.Find(id);
             if (candidate is null)
