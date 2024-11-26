@@ -16,13 +16,13 @@ namespace SigmaTestTask.Controllers
         {
             this.dbContext = dbContext;
         }
-        [HttpGet]
+        [HttpGet("GetAllCandidates")]
         public IActionResult GetAllCandidates()
         {
             var allCandidates= dbContext.Candidates.ToList();
             return Ok(allCandidates);   
         }
-        [HttpGet]
+        [HttpGet("GetCandidateById")]
         [Route("{id:guid}")]
         public IActionResult GetCandidateById(Guid id)
         {
@@ -33,7 +33,7 @@ namespace SigmaTestTask.Controllers
             }
             return Ok(candidate);
         }
-        [HttpPost]
+        [HttpPost("AddCandidate")]
         public IActionResult AddCandidate(AddCandidateDto addCandidateDto)
         {
             var candidate = new Candidate()
@@ -52,7 +52,7 @@ namespace SigmaTestTask.Controllers
             return Ok(candidate);
 
         }
-        [HttpPut]
+        [HttpPut("UpdateCandidate")]
         [Route("{id:int}")]
         public IActionResult UpdateCandidate(int id,UpdateCandidateDto updateCandidateDto )
         {

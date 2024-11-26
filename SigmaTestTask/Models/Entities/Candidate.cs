@@ -10,7 +10,7 @@ namespace SigmaTestTask.Models.Entities
         [Key]
         [Required]
         [EmailAddress]
-        public string Email { get; set; } // Unique Identifier
+        public string Email { get; set; } 
 
         [Required]
         [MaxLength(50)]
@@ -24,7 +24,7 @@ namespace SigmaTestTask.Models.Entities
         [MaxLength(15)]
         public string PhoneNumber { get; set; }
 
-        public string PreferredCallTime { get; set; } // e.g., "9am-11am"
+        public string PreferredCallTime { get; set; } 
 
         [Url]
         public string? LinkedInProfile { get; set; }
