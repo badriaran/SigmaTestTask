@@ -23,8 +23,8 @@ namespace SigmaTestTask.Controllers
             return Ok(allCandidates);   
         }
         [HttpGet("GetCandidateById")]
-        [Route("{id:guid}")]
-        public IActionResult GetCandidateById(Guid id)
+        [Route("{id:int}")]
+        public IActionResult GetCandidateById(int id)
         {
             var candidate=dbContext.Candidates.Find(id);
             if(candidate is null)
